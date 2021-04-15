@@ -13,7 +13,7 @@
   @include mq($tablet) {
     margin-right: 2rem;
   }
-  @include mq($laptop) {
+  @include mq($pc) {
     margin-right: 3rem;
     font-size: 2.2rem;
   }

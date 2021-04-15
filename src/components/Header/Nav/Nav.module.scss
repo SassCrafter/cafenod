@@ -46,13 +46,18 @@
   width: 100%;
 
   .List {
-    width: 40%;
+    width: 100%;
+    max-width: 45rem;
     margin-left: 5rem;
     @include flex(row, center);
   }
 
   .Link {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
+
+    @include mq($pc) {
+      font-size: 1.8rem;
+    }
   }
 }
