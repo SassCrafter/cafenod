@@ -1,0 +1,45 @@
+@import "./config.module";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $primary-font;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}

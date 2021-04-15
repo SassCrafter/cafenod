@@ -1,0 +1,8 @@
+@import "../../styles/config.module";
+
+.Features {
+  @include flex;
+  flex-wrap: wrap;
+  max-width: 120rem;
+  margin: 0 auto;
+}

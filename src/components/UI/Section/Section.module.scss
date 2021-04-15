@@ -1,0 +1,13 @@
+@import "../../../styles/config.module";
+.Section {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0;
+
+  @include mq($laptop) {
+    padding: 4rem 0;
+  }
+  @include mq($pc) {
+    padding: 6rem 0;
+  }
+}

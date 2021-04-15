@@ -1,0 +1,25 @@
+@import "../../styles/config.module";
+
+.Buttons {
+  width: 100%;
+  @include flexColumn(center);
+
+  button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  @include mq($tablet) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    button {
+      width: auto;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../../styles/config.module";
+
+.Btn {
+  display: inline-block;
+  outline: none;
+  border: 2px solid transparent;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  background-color: $primary-color;
+  color: white;
+  cursor: pointer;
+  transition: background-color 200ms linear;
+
+  &:hover {
+    background-color: $dark-color;
+  }
+
+  @include mq($tablet) {
+    font-size: 1.6rem;
+  }
+}
+
+.Outline {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  transition: background-color 200ms linear, color 200ms linear;
+
+  &:hover {
+    background-color: white;
+    color: $dark-color;
+  }
+}

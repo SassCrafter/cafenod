@@ -1,0 +1,25 @@
+@import "../../../styles/config.module";
+
+.Logo {
+  display: inline-block;
+
+  img {
+    max-width: 15rem;
+    height: auto;
+    vertical-align: middle;
+
+    @include mq($tablet) {
+      max-width: 100%;
+    }
+  }
+
+  // img {
+  //   width: auto;
+  //   height: 4rem;
+  //   vertical-align: middle;
+
+  //   @include mq($laptop) {
+  //     height: 6rem;
+  //   }
+  // }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "title": "Awesome Aroma",
+    "description": "The coffee is brewed by first roasting the green coffee beans",
+    "icon": "/images/features/icons/icon_01.png"
+  },
+  {
+    "id": 1,
+    "title": "HIGH QUALITY",
+    "description": "The coffee is brewed by first roasting the green coffee beans",
+    "icon": "/images/features/icons/icon_02.png"
+  },
+  {
+    "id": 2,
+    "title": "PURE GRADES",
+    "description": "The coffee is brewed by first roasting the green coffee beans",
+    "icon": "/images/features/icons/icon_03.png"
+  },
+  {
+    "id": 3,
+    "title": "PROPER ROASTING",
+    "description": "The coffee is brewed by first roasting the green coffee beans",
+    "icon": "/images/features/icons/icon_04.png"
+  }
+]

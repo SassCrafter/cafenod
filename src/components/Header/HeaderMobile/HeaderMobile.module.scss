@@ -1,0 +1,78 @@
+@import "../../../styles/config.module";
+
+.Header {
+  width: 100%;
+  height: 6rem;
+  background-color: transparent;
+  @include absolute;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  @include flex(row, center);
+}
+
+.Right {
+  @include flexCenter;
+}
+
+.Burger {
+  width: 3rem;
+  height: 3rem;
+  @include flexCenter;
+  cursor: pointer;
+  margin-right: 2rem;
+  -webkit-tap-highlight-color: transparent;
+
+  &.Open {
+    .BurgerLine {
+      height: 0;
+      &::before,
+      &::after {
+        top: 0;
+        transition: top 200ms ease-in-out, transform 200ms ease-in-out 200ms;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.BurgerLine {
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  position: relative;
+  transition: height 50ms linear 200ms;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    transition: top 200ms ease-in-out 200ms, transform 200ms ease-in-out;
+  }
+
+  &::before {
+    top: -5px;
+  }
+  &::after {
+    top: calc(100% + 3px);
+  }
+}
+
+.ContactButton {
+  display: none;
+
+  @include mq($tablet) {
+    display: block;
+  }
+}
