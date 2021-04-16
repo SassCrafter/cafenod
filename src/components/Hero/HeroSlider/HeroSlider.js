@@ -73,6 +73,7 @@ function HeroSlider() {
           <HeroSlide item={item} />
         </SwiperSlide>
       ))}
+
       <div className={classes.Navigation}>
         <button
           className={[classes.NavigationButton, classes.PrevBtn].join(" ")}

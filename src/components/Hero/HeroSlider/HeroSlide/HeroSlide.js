@@ -9,7 +9,7 @@ function HeroSlide({ item }) {
         <h2 className={classes.Title}>{item.title}</h2>
         <p className={classes.Lead}>{item.lead}</p>
         <Buttons className={classes.Buttons}>
-          <Button maxWidth="20rem">Testy Coffee</Button>
+          <Button maxWidth="20rem">Tasty Coffee</Button>
           <Button outline maxWidth="20rem">
             Learn More
           </Button>

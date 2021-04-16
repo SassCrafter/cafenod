@@ -46,7 +46,8 @@
   width: 100%;
 
   .List {
-    width: 40%;
+    width: 100%;
+    max-width: 40rem;
     margin-left: 5rem;
     @include flex(row, center);
   }
