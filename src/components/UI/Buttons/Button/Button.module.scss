@@ -1,4 +1,4 @@
-@import "../../../../styles/config.module.scss";
+@import "../../../../styles/config.module";
 
 .Btn {
   display: inline-block;
@@ -19,10 +19,6 @@
 
   @include mq($tablet) {
     font-size: 1.6rem;
-  }
-
-  @include mq($laptop) {
-    font-size: 1.6rem !important;
   }
 }
 

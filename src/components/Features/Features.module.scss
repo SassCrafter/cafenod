@@ -3,6 +3,6 @@
 .Features {
   @include flex;
   flex-wrap: wrap;
-  max-width: 120rem;
+  max-width: $max-width;
   margin: 0 auto;
 }

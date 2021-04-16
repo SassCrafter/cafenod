@@ -8,12 +8,15 @@ function Button({
   btnType = "btn",
   maxWidth = "auto",
   outline,
+  className,
   ...restProps
 }) {
   const returnEl =
     btnType === "link" ? (
       <Link
-        className={[classes.Btn, outline && classes.Outline].join(" ")}
+        className={[classes.Btn, outline && classes.Outline, className].join(
+          " "
+        )}
         onClick={clickHandler}
         {...restProps}
       >
@@ -21,7 +24,9 @@ function Button({
       </Link>
     ) : (
       <button
-        className={[classes.Btn, outline && classes.Outline].join(" ")}
+        className={[classes.Btn, outline && classes.Outline, className].join(
+          " "
+        )}
         onClick={clickHandler}
         style={{ maxWidth: maxWidth }}
       >

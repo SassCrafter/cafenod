@@ -1,12 +1,14 @@
 import React from "react";
-import { Hero, Features } from "../components";
+import { Hero, Features, About, Menu } from "../components";
 
 function Home() {
   return (
     <>
       <Hero />
       <Features />
-      <section style={{ height: "100vh" }}></section>
+      <About />
+      <Menu />
+      {/* <section style={{ height: "100vh" }}></section> */}
     </>
   );
 }

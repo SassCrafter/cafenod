@@ -1,0 +1,36 @@
+@import "../../../styles/config.module";
+
+.Flex {
+  width: 100%;
+  height: 100%;
+}
+
+.Row {
+  @include flexColumn(center, space-between);
+
+  @include mq($tablet) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.RowRevers {
+  @include mq($tablet) {
+    flex-direction: row-reverse;
+  }
+}
+
+.Column {
+  width: 100%;
+  // border: 1px solid red;
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  @include mq($tablet) {
+    width: 48%;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

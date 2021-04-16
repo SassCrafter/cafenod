@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "category": "All"
+  },
+  {
+    "id": 1,
+    "category": "Chocolate"
+  },
+  {
+    "id": 2,
+    "category": "Coffee"
+  },
+  {
+    "id": 3,
+    "category": "Sandwiches"
+  },
+  {
+    "id": 4,
+    "category": "Sweets"
+  },
+  {
+    "id": 5,
+    "category": "Black Tea"
+  },
+  {
+    "id": 6,
+    "category": "Grean Tea"
+  }
+]

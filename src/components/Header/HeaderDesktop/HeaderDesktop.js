@@ -8,7 +8,7 @@ import Cart from "../Cart/Cart";
 
 function HeaderDesktop() {
   return (
-    <div className={`container ${classes.Container}`}>
+    <div className={classes.Container}>
       <div className={classes.Item}>
         <Logo />
         <Nav type="desktop" />

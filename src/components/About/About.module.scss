@@ -1,0 +1,41 @@
+@import "../../styles/config.module";
+
+.Action {
+  width: 100%;
+  max-width: 50rem;
+  @include flexColumn(flex-start);
+  flex-wrap: wrap;
+
+  @include mq($laptop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.Btn {
+  margin-bottom: 2rem;
+  @include mq($laptop) {
+    margin-bottom: 0;
+  }
+}
+
+.OverlayText {
+  text-align: center;
+
+  h4 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  span {
+    font-size: 2.5em;
+    color: $primary-color;
+  }
+
+  strong {
+    @include mq($laptop) {
+      font-size: 2.5rem;
+    }
+  }
+}

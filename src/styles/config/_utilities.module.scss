@@ -8,3 +8,21 @@
 .active {
   color: $primary-color !important;
 }
+
+.primary-color {
+  color: $primary-color !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-index {
+  position: relative;
+  z-index: 2;
+}
+
+// Bgs
+.bg-gray {
+  background-color: $gray-color;
+}

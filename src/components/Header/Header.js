@@ -56,7 +56,10 @@ function Header() {
   });
 
   return (
-    <header className={isMobileView ? mobileClasses : desktopClasses}>
+    <header
+      onLoad={changeHeader}
+      className={isMobileView ? mobileClasses : desktopClasses}
+    >
       {isMobileView ? (
         <HeaderMobile isNavOpen={isNavOpen} toggleNav={toggleNav} />
       ) : (

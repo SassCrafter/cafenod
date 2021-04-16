@@ -1,0 +1,50 @@
+@import "../../../../styles/config.module";
+
+.Tab {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #8b887d;
+  position: relative;
+  padding: 0 0.5rem;
+  margin: 0 1rem 1rem;
+  cursor: pointer;
+  transition: color 200ms linear;
+
+  @include mq($laptop) {
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+  }
+
+  &:hover {
+    color: $dark-color;
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+  &::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: $primary-color;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 200ms ease-in-out;
+
+    @include mq($laptop) {
+      height: 5px;
+    }
+  }
+}
+
+.Active {
+  color: $text-color-dark;
+
+  &::before {
+    transform: scaleX(1);
+  }
+}

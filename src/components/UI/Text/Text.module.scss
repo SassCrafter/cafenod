@@ -1,0 +1,53 @@
+@import "../../../styles/config.module";
+.Container {
+  width: 100%;
+  height: 100%;
+}
+
+.Title {
+  margin-bottom: 2rem;
+
+  @include mq($laptop) {
+    margin-bottom: 3rem;
+  }
+}
+
+.SmallTitle {
+  color: $text-color-dark;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-family: $primary-font;
+  margin-bottom: 1rem;
+
+  @include mq($laptop) {
+    font-size: 1.8rem;
+  }
+}
+
+.BigTitle {
+  color: $text-color-dark;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+
+  @include mq($laptop) {
+    font-size: 5rem;
+  }
+  @include mq($pc) {
+    font-size: 6rem;
+  }
+}
+
+.Paragraph {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+
+  @include mq($laptop) {
+    font-size: 1.6rem;
+  }
+}
+
+.Icon {
+  margin-right: 1rem;
+  color: inherit;
+}

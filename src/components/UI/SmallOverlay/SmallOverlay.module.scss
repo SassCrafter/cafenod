@@ -1,0 +1,12 @@
+@import "../../../styles/config.module";
+
+.Container {
+  width: 24.8rem;
+  height: 22.8rem;
+  @include absoluteCenter;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include flexCenter(column);
+  color: white;
+}
