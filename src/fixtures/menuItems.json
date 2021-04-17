@@ -1,0 +1,18 @@
+[
+	{
+		"id": 0,
+		"category": "chocolate",
+		"title": "AMERICANO SUPER HOT COFFEE",
+		"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+		"image": "/images/menu/items/img_01.png",
+		"price": "3.5"
+	},
+	{
+		"id": 1,
+		"category": "chocolate",
+		"title": "SPECIAL RAW COFFEE",
+		"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+		"image": "/images/menu/items/img_02.png",
+		"price": "4.8"
+	}
+]

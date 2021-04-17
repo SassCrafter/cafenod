@@ -8,6 +8,7 @@ export { default as Chip } from "./UI/Chip/Chip";
 export { default as SmallOverlay } from "./UI/SmallOverlay/SmallOverlay";
 export { default as Deco } from "./UI/Deco/Deco";
 export { default as Tabs } from "./UI/Tabs/Tabs";
+export { default as Card } from "./UI/Card/Card";
 export { default as Flex } from "./Layout/Flex/Flex";
 export { default as Header } from "./Header/Header";
 export { default as Hero } from "./Hero/Hero";

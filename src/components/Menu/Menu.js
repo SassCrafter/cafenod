@@ -9,7 +9,7 @@ function Menu() {
       <Deco
         imgPath="/images/menu/deco/deco_01.png"
         imgAlt="cup of coffee"
-        top="135px"
+        top="55px"
       />
       <div className="z-index">
         <Text>

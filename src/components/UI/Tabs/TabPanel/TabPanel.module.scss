@@ -1,0 +1,100 @@
+@import "../../../../styles/config.module";
+
+.Panel {
+	@include flexColumn(flex-start, flex-start);
+	margin-bottom: 2rem;
+	transition: transform 200ms ease-in-out, box-shadow 200ms linear;
+
+	&:hover {
+		transform: translateY(-0.75rem);
+		box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+
+		.Image {
+			&::before {
+				opacity: 1;
+			}
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	@include mq($tablet) {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.Description {
+	width: 100%;
+	@include flexColumn(flex-start, flex-start);
+
+	@include mq($tablet) {
+		width: 70%;
+		flex-direction: row;
+	}
+}
+
+.Image {
+	margin-bottom: 2rem;
+	overflow: hidden;
+	position: relative;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		@include absolute;
+		background-color: rgba(0, 0, 0, 0.4);
+		opacity: 0;
+		transition: opacity 200ms linear;
+	}
+
+	img {
+		display: block;
+		transition: transform 200ms ease-in-out;
+	}
+
+	@include mq($tablet) {
+		margin-bottom: 0;
+		margin-right: 2rem;
+		min-width: 12rem;
+	}
+}
+
+.Text {
+	width: 100%;
+	margin-bottom: 2rem;
+	h3,
+	a {
+		color: $dark-color;
+		margin-bottom: 1rem;
+	}
+
+	p {
+		font-size: 1.4rem;
+	}
+}
+
+.Price {
+	width: 100%;
+	text-align: right;
+
+	h2 {
+		font-size: 6rem;
+		color: $primary-color;
+
+		span {
+			font-size: 0.3em;
+			color: $dark-color;
+			margin-right: 5px;
+		}
+	}
+
+	@include mq($tablet) {
+		width: 25%;
+		text-align: center;
+		border-left: 2px solid $primary-color;
+	}
+}
