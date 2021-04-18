@@ -1,0 +1,20 @@
+@import "../../../styles/config.module";
+
+.Container {
+	@include mq($tablet) {
+		align-items: stretch;
+	}
+}
+
+.ImageContainer {
+	@include mq($tablet) {
+		width: 30%;
+		@include flexCenter;
+	}
+}
+
+.TextContainer {
+	@include mq($tablet) {
+		width: 65%;
+	}
+}

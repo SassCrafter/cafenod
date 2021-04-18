@@ -20,6 +20,9 @@
   margin-bottom: 1rem;
 
   @include mq($laptop) {
+    font-size: 1.6rem;
+  }
+  @include mq($pc) {
     font-size: 1.8rem;
   }
 }
@@ -31,7 +34,7 @@
   margin-bottom: 0;
 
   @include mq($laptop) {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   @include mq($pc) {
     font-size: 6rem;
@@ -42,7 +45,7 @@
   margin-bottom: 2rem;
   font-size: 1.4rem;
 
-  @include mq($laptop) {
+  @include mq($pc) {
     font-size: 1.6rem;
   }
 }

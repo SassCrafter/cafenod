@@ -15,10 +15,17 @@ function Flex({ children, ...restProps }) {
 
 export default Flex;
 
-Flex.Row = function FlexRow({ children, flexDirection, ...restProps }) {
+Flex.Row = function FlexRow({
+  children,
+  flexDirection,
+  className,
+  ...restProps
+}) {
   return (
     <div
-      className={`${classes.Row} ${classNames[flexDirection]}`}
+      className={`${classes.Row} ${classNames[flexDirection]} ${
+        className || ""
+      }`}
       {...restProps}
     >
       {children}
@@ -26,9 +33,9 @@ Flex.Row = function FlexRow({ children, flexDirection, ...restProps }) {
   );
 };
 
-Flex.Column = function FlexColumn({ children, ...restProps }) {
+Flex.Column = function FlexColumn({ children, className, ...restProps }) {
   return (
-    <div className={classes.Column} {...restProps}>
+    <div className={`${classes.Column} ${className || ""}`} {...restProps}>
       {children}
     </div>
   );
