@@ -1,0 +1,18 @@
+.List {
+	width: 100%;
+}
+
+.Animate {
+	animation: bump 600ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@keyframes bump {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}

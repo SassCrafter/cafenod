@@ -5,11 +5,17 @@ import CategoriesData from "../../fixtures/menuCategories.json";
 
 function Menu() {
   return (
-    <Section className="bg-gray relative">
+    <Section className={`bg-gray relative ${classes.Menu}`}>
       <Deco
         imgPath="/images/menu/deco/deco_01.png"
         imgAlt="cup of coffee"
         top="55px"
+      />
+      <Deco
+        imgPath="/images/menu/deco/deco_02.png"
+        imgAlt="house"
+        top="20%"
+        left="60%"
       />
       <div className="z-index">
         <Text>

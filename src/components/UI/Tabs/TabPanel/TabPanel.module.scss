@@ -1,7 +1,6 @@
 @import "../../../../styles/config.module";
 
 .Panel {
-	@include flexColumn(flex-start, flex-start);
 	margin-bottom: 2rem;
 	transition: transform 200ms ease-in-out, box-shadow 200ms linear;
 
@@ -17,8 +16,22 @@
 				transform: scale(1.1);
 			}
 		}
+
+		.Text h3,
+		.Text a {
+			color: $primary-color;
+		}
 	}
 
+	@include mq($tablet) {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.PanelLink {
+	@include flexColumn(flex-start, flex-start);
 	@include mq($tablet) {
 		flex-direction: row;
 		align-items: center;
@@ -40,6 +53,7 @@
 	margin-bottom: 2rem;
 	overflow: hidden;
 	position: relative;
+	border-radius: 5px;
 
 	&::before {
 		content: "";
@@ -70,10 +84,16 @@
 	a {
 		color: $dark-color;
 		margin-bottom: 1rem;
+		transition: color 200ms linear;
+
+		&:hover {
+			color: $primary-color;
+		}
 	}
 
 	p {
 		font-size: 1.4rem;
+		color: $text-color;
 	}
 }
 

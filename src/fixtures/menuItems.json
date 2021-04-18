@@ -1,18 +1,128 @@
 [
 	{
-		"id": 0,
 		"category": "chocolate",
-		"title": "AMERICANO SUPER HOT COFFEE",
-		"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
-		"image": "/images/menu/items/img_01.png",
-		"price": "3.5"
+		"items": [
+			{
+				"id": 0,
+				"category": "chocolate",
+				"title": "AMERICANO SUPER HOT COFFEE",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_01.png",
+				"price": "3.5"
+			},
+			{
+				"id": 1,
+				"category": "chocolate coffee",
+				"title": "SPECIAL RAW COFFEE",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_02.png",
+				"price": "4.8"
+			}
+		]
 	},
 	{
-		"id": 1,
-		"category": "chocolate",
-		"title": "SPECIAL RAW COFFEE",
-		"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
-		"image": "/images/menu/items/img_02.png",
-		"price": "4.8"
+		"category": "coffee",
+		"items": [
+			{
+				"id": 1,
+				"category": "chocolate coffee",
+				"title": "SPECIAL RAW COFFEE",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_02.png",
+				"price": "4.8"
+			},
+			{
+				"id": 2,
+				"category": "coffee",
+				"title": "AMERICANO SUPER HOT COFFEE",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_03.png",
+				"price": "3.2"
+			}
+		]
+	},
+	{
+		"category": "sandwiches",
+		"items": [
+			{
+				"id": 3,
+				"category": "sandwiches",
+				"title": "INDIAN PURE TEA",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_04.png",
+				"price": "1.6"
+			},
+			{
+				"id": 4,
+				"category": "sandwiches",
+				"title": "BANGLADESHI GREEN TEA",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_04.png",
+				"price": "1.6"
+			}
+		]
+	},
+	{
+		"category": "black tea",
+		"items": [
+			{
+				"id": 5,
+				"category": "chocolate",
+				"title": "AMERICANO SUPER HOT COFFEE",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_01.png",
+				"price": "3.5"
+			},
+			{
+				"id": 6,
+				"category": "chocolate coffee",
+				"title": "SPECIAL RAW COFFEE",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_02.png",
+				"price": "4.8"
+			}
+		]
+	},
+	{
+		"category": "sweets",
+		"items": [
+			{
+				"id": 7,
+				"category": "sandwiches",
+				"title": "INDIAN PURE TEA",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_04.png",
+				"price": "1.6"
+			},
+			{
+				"id": 8,
+				"category": "sandwiches",
+				"title": "BANGLADESHI GREEN TEA",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_04.png",
+				"price": "1.6"
+			}
+		]
+	},
+	{
+		"category": "green tea",
+		"items": [
+			{
+				"id": 9,
+				"category": "chocolate coffee",
+				"title": "SPECIAL RAW COFFEE",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_02.png",
+				"price": "4.8"
+			},
+			{
+				"id": 10,
+				"category": "coffee",
+				"title": "INDIAN PURE TEA",
+				"description": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an",
+				"image": "/images/menu/items/img_03.png",
+				"price": "3.2"
+			}
+		]
 	}
 ]

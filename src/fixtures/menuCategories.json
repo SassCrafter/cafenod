@@ -1,30 +1,30 @@
 [
   {
     "id": 0,
-    "category": "All"
+    "category": "all"
   },
   {
     "id": 1,
-    "category": "Chocolate"
+    "category": "chocolate"
   },
   {
     "id": 2,
-    "category": "Coffee"
+    "category": "coffee"
   },
   {
     "id": 3,
-    "category": "Sandwiches"
+    "category": "sandwiches"
   },
   {
     "id": 4,
-    "category": "Sweets"
+    "category": "sweets"
   },
   {
     "id": 5,
-    "category": "Black Tea"
+    "category": "black tea"
   },
   {
     "id": 6,
-    "category": "Grean Tea"
+    "category": "green tea"
   }
 ]
