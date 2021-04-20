@@ -1,0 +1,19 @@
+@import "../../styles/config.module";
+
+.Container {
+	width: 100%;
+}
+
+.List {
+	width: 100%;
+}
+
+.Item {
+	width: 100%;
+	@include flex;
+
+	span {
+		color: $primary-color;
+		text-transform: uppercase;
+	}
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./Section.module.scss";
 
-function Section({ children, className }) {
+function Section({ children, className, container = true }) {
   return (
     <section className={`${classes.Section} ${className || ""}`}>
-      <div className="container">{children}</div>
+      {!container ? children : <div className="container">{children}</div>}
     </section>
   );
 }

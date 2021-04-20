@@ -1,0 +1,21 @@
+@import "../../../styles/config.module";
+
+.Container {
+	@include flex(row, center, flex-start);
+	width: auto;
+
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+}
+
+.Icon {
+	width: 3.5rem;
+	height: 3.5rem;
+	@include flexCenter;
+	font-size: 1.6rem;
+	color: $primary-color;
+	background-color: white;
+	border-radius: 4px;
+	margin-right: 1rem;
+}

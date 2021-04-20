@@ -14,8 +14,10 @@ function Menu() {
       <Deco
         imgPath="/images/menu/deco/deco_02.png"
         imgAlt="house"
-        top="20%"
-        left="60%"
+        top="auto"
+        left="auto"
+        right="0"
+        bottom="0"
       />
       <div className="z-index">
         <Text>

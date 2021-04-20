@@ -11,7 +11,10 @@
 }
 
 .Container {
+  width: 100%;
+  max-width: $hero-max-width;
+  margin: 0 auto;
+  padding: 5rem 2rem 0;
   height: 100%;
   @include flexCenter(column);
-  padding-top: 5rem;
 }

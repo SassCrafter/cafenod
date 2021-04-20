@@ -5,7 +5,7 @@ import HeroSlider from "./HeroSlider/HeroSlider";
 function Hero() {
   return (
     <section className={classes.Hero}>
-      <div className={["container", classes.Container].join(" ")}>
+      <div className={classes.Container}>
         <HeroSlider />
       </div>
     </section>

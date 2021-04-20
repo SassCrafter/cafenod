@@ -1,20 +1,35 @@
 @import "../../../styles/config.module";
 
 .Container {
-	@include mq($tablet) {
-		align-items: stretch;
-	}
+  padding: 2rem 3rem;
+
+  @include mq($tablet) {
+    // align-items: stretch;
+  }
 }
 
 .ImageContainer {
-	@include mq($tablet) {
-		width: 30%;
-		@include flexCenter;
-	}
+  @include mq($tablet) {
+    width: 30%;
+
+    & > div {
+      @include flexCenter;
+    }
+  }
+  @include mq($pc) {
+    width: 40%;
+  }
+
+  img {
+    max-width: 50rem;
+  }
 }
 
 .TextContainer {
-	@include mq($tablet) {
-		width: 65%;
-	}
+  @include mq($tablet) {
+    width: 68%;
+  }
+  @include mq($pc) {
+    width: 58%;
+  }
 }

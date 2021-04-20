@@ -16,3 +16,5 @@ export { default as Features } from "./Features/Features";
 export { default as About } from "./About/About";
 export { default as Menu } from "./Menu/Menu";
 export { default as Offer } from "./Offer/Offer";
+export { default as OpeningHours } from "./OpeningHours/OpeningHours";
+export { default as ContactInfo } from "./ContactInfo/ContactInfo";
