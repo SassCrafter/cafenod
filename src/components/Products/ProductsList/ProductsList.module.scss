@@ -1,0 +1,7 @@
+@import "../../../styles/config.module.scss";
+
+.List {
+	width: 100%;
+	@include flex;
+	flex-wrap: wrap;
+}

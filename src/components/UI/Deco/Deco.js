@@ -9,9 +9,13 @@ function Deco({
   left = 0,
   bottom = "auto",
   right = "auto",
+  className,
 }) {
   return (
-    <div className={classes.Container} style={{ top, left, bottom, right }}>
+    <div
+      className={`${classes.Container} ${className}`}
+      style={{ top, left, bottom, right }}
+    >
       <img src={imgPath} alt={imgAlt} />
     </div>
   );

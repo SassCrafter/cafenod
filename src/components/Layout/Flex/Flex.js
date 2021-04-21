@@ -33,9 +33,18 @@ Flex.Row = function FlexRow({
   );
 };
 
-Flex.Column = function FlexColumn({ children, className, ...restProps }) {
+Flex.Column = function FlexColumn({
+  children,
+  className,
+  alignSelf,
+  ...restProps
+}) {
   return (
-    <div className={`${classes.Column} ${className || ""}`} {...restProps}>
+    <div
+      className={`${classes.Column} ${className || ""}`}
+      {...restProps}
+      style={{ alignSelf: alignSelf || "initial" }}
+    >
       {children}
     </div>
   );

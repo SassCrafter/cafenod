@@ -1,0 +1,35 @@
+[
+	{
+		"id": 0,
+		"image": "/images/testimonials/person_1.png",
+		"smallTitle": "Client Testimonial",
+		"icon": "fas fa-coffee",
+		"bigTitle": "Our client says something about Cofenod",
+		"text": "Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatuey.",
+		"name": "Rasalina De Willamson",
+		"position": "Founder & CEO",
+		"rating": 4
+	},
+	{
+		"id": 1,
+		"image": "/images/testimonials/person_1.png",
+		"smallTitle": "Client Testimonial",
+		"icon": "fas fa-coffee",
+		"bigTitle": "Our client says something about Cofenod",
+		"text": "Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatuey.",
+		"name": "Rasalina De Willamson",
+		"position": "Founder & CEO",
+		"rating": 5
+	},
+	{
+		"id": 2,
+		"image": "/images/testimonials/person_1.png",
+		"smallTitle": "Client Testimonial",
+		"icon": "fas fa-coffee",
+		"bigTitle": "Our client says something about Cofenod",
+		"text": "Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatuey.",
+		"name": "Rasalina De Willamson",
+		"position": "Founder & CEO",
+		"rating": 3
+	}
+]

@@ -1,5 +1,13 @@
 import React from "react";
-import { Hero, Features, About, Menu, Offer } from "../components";
+import {
+	Hero,
+	Features,
+	About,
+	Menu,
+	Offer,
+	Testimonials,
+	Products,
+} from "../components";
 
 function Home() {
 	return (
@@ -9,6 +17,8 @@ function Home() {
 			<About />
 			<Menu />
 			<Offer />
+			<Testimonials />
+			<Products />
 		</>
 	);
 }

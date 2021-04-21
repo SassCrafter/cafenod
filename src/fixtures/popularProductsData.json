@@ -1,0 +1,38 @@
+[
+	{
+		"id": 0,
+		"image": "/images/products/img_01.png",
+		"name": "Tasty coffee stimy",
+		"price": 99
+	},
+	{
+		"id": 1,
+		"image": "/images/products/img_02.png",
+		"name": "AMERICANO PURE GRADES",
+		"price": 101
+	},
+	{
+		"id": 2,
+		"image": "/images/products/img_03.png",
+		"name": "INDIAN ROASTING PACK",
+		"price": 89
+	},
+	{
+		"id": 3,
+		"image": "/images/products/img_04.png",
+		"name": "BANGLADESHI ORGANIC GRADES",
+		"price": 95
+	},
+	{
+		"id": 4,
+		"image": "/images/products/img_05.png",
+		"name": "ARABICA COFFEE PACK",
+		"price": 110
+	},
+	{
+		"id": 5,
+		"image": "/images/products/img_06.png",
+		"name": "AMERICANO PURE GRADES",
+		"price": 100
+	}
+]

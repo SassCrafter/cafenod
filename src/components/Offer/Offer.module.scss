@@ -5,12 +5,13 @@
 }
 
 .RowContainer {
+  align-items: center !important;
   @include mq($tablet) {
     flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-start;
   }
   @include mq($laptop) {
+    align-items: flex-start !important;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -33,9 +34,10 @@
     width: 100%;
   }
   @include mq($laptop) {
-    width: 70%;
+    width: 65%;
   }
   @include mq($pc) {
+    width: 70%;
     padding-top: 5rem;
   }
 }
@@ -169,4 +171,9 @@
   padding-bottom: 0;
   color: $dark-color;
   text-align: center;
+  display: none;
+
+  @include mq($pc) {
+    display: block;
+  }
 }

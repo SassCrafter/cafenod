@@ -18,3 +18,5 @@ export { default as Menu } from "./Menu/Menu";
 export { default as Offer } from "./Offer/Offer";
 export { default as OpeningHours } from "./OpeningHours/OpeningHours";
 export { default as ContactInfo } from "./ContactInfo/ContactInfo";
+export { default as Testimonials } from "./Testimonials/Testimonials";
+export { default as Products } from "./Products/Products";
