@@ -4,7 +4,7 @@ import classes from "./Button.module.scss";
 
 function Button({
   children,
-  clickHandler,
+  onClick,
   btnType = "btn",
   maxWidth = "auto",
   outline,
@@ -17,7 +17,7 @@ function Button({
         className={[classes.Btn, outline && classes.Outline, className].join(
           " "
         )}
-        onClick={clickHandler}
+        onClick={onClick}
         {...restProps}
       >
         {children}
@@ -27,7 +27,7 @@ function Button({
         className={[classes.Btn, outline && classes.Outline, className].join(
           " "
         )}
-        onClick={clickHandler}
+        onClick={onClick}
         style={{ maxWidth: maxWidth }}
       >
         {children}

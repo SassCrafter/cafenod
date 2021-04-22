@@ -7,7 +7,7 @@ import Nav from "../Nav/Nav";
 import { Logo, Button } from "../../index";
 import classes from "./HeaderMobile.module.scss";
 
-function HeaderMobile({ isNavOpen, toggleNav }) {
+function HeaderMobile({ isNavOpen, toggleNav, onCartButtonClick }) {
   return (
     <div className={["container", classes.Container].join(" ")}>
       <Logo />
@@ -19,7 +19,7 @@ function HeaderMobile({ isNavOpen, toggleNav }) {
           <span className={classes.BurgerLine}></span>
         </div>
         <Search />
-        <Cart />
+        <Cart onClick={onCartButtonClick} />
         <div className={classes.ContactButton}>
           <Button btnType="link" to={CONTACT}>
             Contact

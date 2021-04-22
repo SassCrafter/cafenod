@@ -12,9 +12,7 @@ function TabPanel({ title, image, description, price, linkTo }) {
 						<img src={image} alt={title} />
 					</div>
 					<div className={classes.Text}>
-						<h3>
-							<Link to={linkTo}>{title}</Link>
-						</h3>
+						<h3>{title}</h3>
 						<p>{description}</p>
 					</div>
 				</div>

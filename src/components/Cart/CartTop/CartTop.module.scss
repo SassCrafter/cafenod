@@ -1,0 +1,11 @@
+@import "../../../styles/config.module";
+
+.Container {
+	margin-bottom: 2rem;
+}
+
+.Title {
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: $dark-color;
+}

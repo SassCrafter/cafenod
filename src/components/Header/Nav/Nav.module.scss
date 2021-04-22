@@ -55,5 +55,9 @@
   .Link {
     font-size: 1.8rem;
     font-weight: 500;
+
+    @include mq($laptop) {
+      font-size: 1.6rem;
+    }
   }
 }

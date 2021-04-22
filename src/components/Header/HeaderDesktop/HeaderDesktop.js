@@ -6,7 +6,7 @@ import Nav from "../Nav/Nav";
 import Search from "../Search/Search";
 import Cart from "../Cart/Cart";
 
-function HeaderDesktop() {
+function HeaderDesktop({ onCartButtonClick }) {
   return (
     <div className={classes.Container}>
       <div className={classes.Item}>
@@ -15,7 +15,7 @@ function HeaderDesktop() {
       </div>
       <div className={classes.Item}>
         <Search />
-        <Cart />
+        <Cart onClick={onCartButtonClick} />
         <Button btnType="link" to={CONTACT}>
           Contact Us
         </Button>

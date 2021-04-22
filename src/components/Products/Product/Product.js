@@ -1,21 +1,41 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from "./Product.module.scss";
 import { Card, BigImage, Button } from "../../index";
 import { Link } from "react-router-dom";
+import CartContext from "../../../store/cart/cart-context";
 
-function Product({ image, alt, name, price }) {
+function Product({ id, image, alt, name, price }) {
+	const { addItem } = useContext(CartContext);
+
+	const addProductToCart = () => {
+		console.log("Product click");
+		const item = {
+			id,
+			name,
+			image,
+			price,
+			amount: 1,
+		};
+		addItem(item);
+	};
+
 	return (
 		<Card className={classes.Container}>
-			<div className={classes.Cover}>
-				<BigImage className={classes.Image} src={image} alt={alt} />
-			</div>
+			<Link to="/product">
+				<div className={classes.Cover}>
+					<BigImage className={classes.Image} src={image} alt={alt} />
+				</div>
+			</Link>
 			<div className={classes.Info}>
-				<Link to="/Product" className={classes.Name}>
-					<h4>{name}</h4>
-				</Link>
+				<h4 className={classes.Name}>{name}</h4>
+
 				<div className={classes.Action}>
 					<h5 className={classes.Price}>${price.toFixed(2)}</h5>
-					<Button className={classes.Btn} outline>
+					<Button
+						className={classes.Btn}
+						outline
+						onClick={addProductToCart}
+					>
 						Add to Cart
 					</Button>
 				</div>

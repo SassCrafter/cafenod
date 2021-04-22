@@ -48,7 +48,7 @@
     transform: translateY(-50%);
 
     @include mq($laptop) {
-      width: 90%;
+      width: 50%;
       border-width: 4px;
     }
   }

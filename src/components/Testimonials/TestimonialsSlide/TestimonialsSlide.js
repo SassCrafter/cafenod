@@ -46,8 +46,8 @@ function TestimonialsSlide({
 						</div>
 						<div className={classes.Rating}>
 							<ul>
-								{starRatings.map((item) => (
-									<li>{item}</li>
+								{starRatings.map((item, idx) => (
+									<li key={idx}>{item}</li>
 								))}
 							</ul>
 						</div>

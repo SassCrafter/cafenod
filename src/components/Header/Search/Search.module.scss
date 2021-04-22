@@ -11,6 +11,9 @@
 
   @include mq($laptop) {
     margin-right: 3rem;
+    font-size: 1.8rem;
+  }
+  @include mq($pc) {
     font-size: 2.2rem;
   }
 }

@@ -5,7 +5,7 @@ import HeaderMobile from "./HeaderMobile/HeaderMobile";
 import HeaderDesktop from "./HeaderDesktop/HeaderDesktop";
 import { getWindowWidth } from "../../utils/utils";
 
-function Header() {
+function Header({ onCartButtonClick }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
@@ -61,9 +61,13 @@ function Header() {
       className={isMobileView ? mobileClasses : desktopClasses}
     >
       {isMobileView ? (
-        <HeaderMobile isNavOpen={isNavOpen} toggleNav={toggleNav} />
+        <HeaderMobile
+          isNavOpen={isNavOpen}
+          toggleNav={toggleNav}
+          onCartButtonClick={onCartButtonClick}
+        />
       ) : (
-        <HeaderDesktop />
+        <HeaderDesktop onCartButtonClick={onCartButtonClick} />
       )}
     </header>
   );

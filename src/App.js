@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
-import { Header } from "./components";
-import { Home } from "./pages";
+import { Header, Cart } from "./components";
+import { SameContent, Home } from "./pages";
+import CartProvider from "./store/cart/CartProvider";
 
 function App() {
   const scrollHandler = (e) => {
@@ -10,15 +11,17 @@ function App() {
   };
 
   return (
-    <Router>
-      <Header />
-      <Route exact path={ROUTES.CONTACT}>
-        <h1>Contact</h1>
-      </Route>
-      <Route exact path={ROUTES.HOME}>
-        <Home />
-      </Route>
-    </Router>
+    <CartProvider>
+      <Router>
+        <SameContent />
+        <Route exact path={ROUTES.CONTACT}>
+          <h1>Contact</h1>
+        </Route>
+        <Route exact path={ROUTES.HOME}>
+          <Home />
+        </Route>
+      </Router>
+    </CartProvider>
   );
 }
 
