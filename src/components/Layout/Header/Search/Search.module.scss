@@ -1,0 +1,19 @@
+@import "../../../../styles/config.module";
+.SearchIcon {
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  margin-right: 2rem;
+  transition: color 200ms linear;
+  &:hover {
+    color: $primary-color;
+  }
+
+  @include mq($laptop) {
+    margin-right: 3rem;
+    font-size: 1.8rem;
+  }
+  @include mq($pc) {
+    font-size: 2.2rem;
+  }
+}

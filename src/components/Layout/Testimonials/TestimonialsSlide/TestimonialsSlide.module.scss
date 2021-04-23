@@ -1,0 +1,42 @@
+@import "../../../../styles/config.module";
+
+.Person {
+  @include flex(row, center, flex-start);
+  color: $dark-color;
+  margin-top: 4rem;
+}
+
+.Info {
+  margin-right: 2rem;
+}
+
+.Name {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+
+  @include mq($laptop) {
+    font-size: 2rem;
+  }
+}
+
+.Position {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  color: $primary-color;
+
+  @include mq($laptop) {
+    font-size: 1.8rem;
+  }
+}
+
+.Rating {
+  ul {
+    @include flex;
+    color: $primary-color;
+  }
+
+  li {
+    margin: 0 0.25rem;
+  }
+}

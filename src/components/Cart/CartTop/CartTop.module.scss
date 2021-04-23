@@ -1,11 +1,40 @@
 @import "../../../styles/config.module";
 
 .Container {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Header {
+  @include flex(row, center);
+  margin-bottom: 2rem;
+}
+
+.CloseBtn {
+  button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
 }
 
 .Title {
-	font-size: 2rem;
-	text-transform: uppercase;
-	color: $dark-color;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $dark-color;
+  margin-bottom: 0;
+}
+
+.BigTitle {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: $dark-color;
+}
+
+.TotalAmount {
+  font-size: 1.1em;
+  color: $primary-color;
 }

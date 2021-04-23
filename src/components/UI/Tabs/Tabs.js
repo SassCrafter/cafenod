@@ -18,7 +18,6 @@ function Tabs({ items }) {
       (item) => item.category === activeCategory
     );
   }
-  console.log(filteredItems);
 
   return (
     <div className={classes.Container}>

@@ -3,3 +3,4 @@ export const ABOUT = "/about";
 export const BLOG = "/blog";
 export const CONTACT = "/contact";
 export const PRODUCT = "/product";
+export const CHECKOUT = "/checkout";

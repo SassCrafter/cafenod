@@ -12,6 +12,7 @@
   color: white;
   cursor: pointer;
   transition: background-color 200ms linear;
+  text-align: center;
 
   &:hover {
     background-color: $dark-color;
@@ -32,4 +33,8 @@
     background-color: white;
     color: $dark-color;
   }
+}
+
+.FullWidth {
+  width: 100%;
 }

@@ -1,0 +1,34 @@
+@import "../../../../styles/config.module";
+.Cart {
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  position: relative;
+  transition: color 200ms linear;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  @include mq($tablet) {
+    margin-right: 2rem;
+  }
+  @include mq($laptop) {
+    margin-right: 3rem;
+    font-size: 1.8rem;
+  }
+}
+
+.Counter {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 50%;
+  background-color: $primary-color;
+  color: white;
+  position: absolute;
+  top: -0.5rem;
+  right: -1rem;
+}

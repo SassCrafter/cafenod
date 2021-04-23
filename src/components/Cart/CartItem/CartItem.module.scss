@@ -1,0 +1,64 @@
+@import "../../../styles/config.module";
+
+.Container {
+  @include flex(row, center);
+  color: $dark-color;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.Left {
+  @include flex(row, center, flex-start);
+  width: 70%;
+}
+
+.Image {
+  width: 4rem;
+  margin-right: 2rem;
+}
+
+.Name {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.Price {
+  margin-bottom: 0;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: 2px solid $primary-color;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+}
+
+.Action {
+  width: 30%;
+  @include flex(row, center, center);
+}
+
+.Amount {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin: 0 0.75rem;
+}
+
+.Btn {
+  @include flexCenter;
+  outline: none;
+  background-color: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid $text-color-dark;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 200ms linear, color 200ms linear;
+
+  &:hover {
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../styles/config.module.scss";
+
+.Container {
+  background: url("../../../assests/images/testimonials/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: relative;
+
+  @include mq($laptop) {
+    background-size: 35% 100%;
+  }
+  @include mq($pc) {
+    background-size: 30% 100%;
+  }
+}

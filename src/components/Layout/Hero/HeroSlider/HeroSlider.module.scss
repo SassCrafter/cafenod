@@ -1,0 +1,196 @@
+@import "../../../../styles/config.module";
+
+.Slider {
+  width: 100%;
+  height: 80%;
+
+  @include mq($laptop) {
+    height: 90%;
+  }
+  @include mq($pc) {
+    height: 85%;
+  }
+}
+
+.Slide {
+  border-radius: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+
+  & > * {
+    position: relative;
+    // z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    @include absolute;
+    pointer-events: none;
+  }
+}
+
+// Navigation
+
+.Navigation {
+  width: 4rem;
+  @include flexColumn(flex-start);
+  @include absolute(50%, 5px);
+  transform: translateY(-50%);
+  z-index: 5;
+  color: white;
+
+  @include mq($tablet) {
+    left: 5%;
+  }
+}
+
+.NavigationButton {
+  outline: none;
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 200ms linear;
+
+  @include mq($tablet) {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.6rem;
+  }
+
+  &:not(:disabled):hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.PrevBtn {
+  margin-bottom: 1rem;
+}
+.NextBtn {
+  outline: none;
+}
+
+// Pagination
+
+.Pagination {
+  width: 2rem !important;
+  height: auto;
+  @include flexColumn;
+  position: absolute;
+  top: 50%;
+  bottom: auto !important;
+  left: auto !important;
+  right: 5px;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  @include mq($tablet) {
+    right: 5%;
+    width: 3rem !important;
+  }
+}
+
+.Bullet {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: $dark-color;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: background-color 200ms linear;
+
+  &:not(.ActiveBullet):hover {
+    background-color: white;
+  }
+
+  @include mq($tablet) {
+    margin: 0.75rem 0;
+  }
+  @include mq($laptop) {
+    margin: 1rem 0;
+  }
+}
+
+.ActiveBullet {
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid white;
+  position: relative;
+  background-color: transparent;
+
+  @include mq($tablet) {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  @include mq($laptop) {
+    border-width: 4px;
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  &::before {
+    content: "";
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: white;
+    @include absoluteCenter;
+  }
+}
+
+// .Bullet {
+//   display: inline-block;
+//   width: 1.8rem;
+//   height: 1.8rem;
+//   margin: 0.5rem 0;
+//   border-radius: 50%;
+//   border: 2px solid white;
+//   position: relative;
+//   cursor: pointer;
+
+//   @include mq($tablet) {
+//     width: 2.2rem;
+//     height: 2.2rem;
+//   }
+//   @include mq($laptop) {
+//     border-width: 4px;
+//     width: 2.6rem;
+//     height: 2.6rem;
+//   }
+
+//   &::before {
+//     content: "";
+//     width: 40%;
+//     height: 40%;
+//     border-radius: 50%;
+//     background-color: white;
+//     opacity: 0;
+//     @include absoluteCenter;
+//   }
+// }
+
+.ActiveBullet {
+  &::before {
+    opacity: 1;
+  }
+}

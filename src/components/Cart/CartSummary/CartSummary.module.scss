@@ -1,0 +1,21 @@
+@import "../../../styles/config.module";
+
+.Container {
+  height: 25%;
+  background: $dark-color;
+  border-radius: 2.5rem 2.5rem 0 0;
+  padding: 2rem;
+  @include flexColumn(center, center);
+}
+
+.Top {
+  width: 100%;
+
+  @include flex(row, center);
+  margin-bottom: 2rem;
+}
+.Total {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0;
+}

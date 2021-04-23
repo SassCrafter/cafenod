@@ -10,15 +10,19 @@ export { default as Deco } from "./UI/Deco/Deco";
 export { default as Tabs } from "./UI/Tabs/Tabs";
 export { default as Card } from "./UI/Card/Card";
 export { default as Backdrop } from "./UI/Backdrop/Backdrop";
+export { default as PageHero } from "./UI/PageHero/PageHero";
+export { default as Title } from "./UI/Title/Title";
+
 export { default as Flex } from "./Layout/Flex/Flex";
-export { default as Header } from "./Header/Header";
-export { default as Hero } from "./Hero/Hero";
-export { default as Features } from "./Features/Features";
-export { default as About } from "./About/About";
-export { default as Menu } from "./Menu/Menu";
-export { default as Offer } from "./Offer/Offer";
+export { default as Header } from "./Layout/Header/Header";
+export { default as Hero } from "./Layout/Hero/Hero";
+export { default as Features } from "./Layout/Features/Features";
+export { default as About } from "./Layout/About/About";
+export { default as Menu } from "./Layout/Menu/Menu";
+export { default as Offer } from "./Layout/Offer/Offer";
+export { default as Testimonials } from "./Layout/Testimonials/Testimonials";
+export { default as Products } from "./Layout/Products/Products";
+
 export { default as OpeningHours } from "./OpeningHours/OpeningHours";
 export { default as ContactInfo } from "./ContactInfo/ContactInfo";
-export { default as Testimonials } from "./Testimonials/Testimonials";
-export { default as Products } from "./Products/Products";
 export { default as Cart } from "./Cart/Cart";
