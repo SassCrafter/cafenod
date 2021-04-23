@@ -2,20 +2,39 @@
 
 .Container {
   height: 25%;
-  background: $dark-color;
+  // background: $dark-color;
   border-radius: 2.5rem 2.5rem 0 0;
   padding: 2rem;
-  @include flexColumn(center, center);
+  @include flexColumn(center, flex-end);
 }
 
 .Top {
   width: 100%;
 
   @include flex(row, center);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .Total {
-  font-size: 1.8rem;
-  color: #fff;
+  font-size: 3rem;
+  color: $dark-color;
   margin-bottom: 0;
+}
+
+.Btns {
+  width: 100%;
+  @include flex;
+
+  & > * {
+    width: 48%;
+  }
+}
+
+.OutlineBtn {
+  color: $dark-color;
+  border-color: $dark-color;
+
+  &:hover {
+    background-color: $dark-color;
+    color: white;
+  }
 }

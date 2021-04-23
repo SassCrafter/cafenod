@@ -1,0 +1,39 @@
+@import "../../../styles/config.module";
+
+.Container {
+	@include flex(row, center, flex-start);
+}
+
+.Radio {
+	border-radius: 50%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	height: 1.8rem;
+	width: 1.8rem;
+	position: relative;
+	border: 1px solid $dark-color;
+	cursor: pointer;
+	outline: none;
+	vertical-align: top;
+	margin-right: 1rem;
+
+	&::after {
+		content: "";
+		width: 40%;
+		height: 40%;
+		border-radius: 50%;
+		background-color: $dark-color;
+		opacity: 0;
+		@include absoluteCenter;
+		transition: opacity 200ms linear;
+	}
+
+	&:checked::after {
+		opacity: 1;
+	}
+}
+
+.Label {
+	font-weight: 600;
+	font-size: 1.6rem;
+}

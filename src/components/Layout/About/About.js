@@ -16,7 +16,7 @@ function About() {
     <Section>
       <Flex>
         <Flex.Row flexDirection="rowReverse">
-          <Flex.Column>
+          <Flex.Column data-aos="fade-up">
             <BigImage
               src="/images/about/img_01.png"
               alt="about"
@@ -32,7 +32,7 @@ function About() {
               </SmallOverlay>
             </BigImage>
           </Flex.Column>
-          <Flex.Column>
+          <Flex.Column data-aos="fade-up">
             <AboutText />
             <div className={classes.Action}>
               <Button btnType="link" to={ABOUT} className={classes.Btn}>

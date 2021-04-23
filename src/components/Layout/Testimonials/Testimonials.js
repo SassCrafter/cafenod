@@ -12,7 +12,7 @@ import "swiper/swiper.scss";
 function Testimonials() {
   return (
     <Section className={classes.Container}>
-      <Swiper grabCursor spaceBetween={50}>
+      <Swiper grabCursor spaceBetween={50} data-aos="fade-up">
         {TestimonialsData?.map((item) => (
           <SwiperSlide key={item.id}>
             <TestimonialsSlide

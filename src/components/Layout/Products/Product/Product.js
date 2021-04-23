@@ -19,7 +19,7 @@ function Product({ id, image, alt, name, price }) {
   };
 
   return (
-    <Card className={classes.Container}>
+    <Card className={classes.Container} data-aos="fade-up">
       <Link to="/product">
         <div className={classes.Cover}>
           <BigImage className={classes.Image} src={image} alt={alt} />

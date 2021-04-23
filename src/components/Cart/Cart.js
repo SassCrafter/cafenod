@@ -22,7 +22,7 @@ function Cart({ open, onCloseCart }) {
             onRemoveItem={removeItem}
           />
         </div>
-        <CartSummary totalPrice={totalPrice} />
+        <CartSummary totalPrice={totalPrice} onGoToCheckout={onCloseCart} />
       </div>
     </>
   );

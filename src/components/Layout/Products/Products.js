@@ -5,7 +5,7 @@ import ProductsList from "./ProductsList/ProductsList";
 
 function PopularProducts() {
   return (
-    <Section className={`bg-gray ${classes.Products}`}>
+    <Section className={`bg-gray ${classes.Products}`} data-aos="fade-up">
       <Text>
         <Text.Title>
           <Text.SmallTitle>

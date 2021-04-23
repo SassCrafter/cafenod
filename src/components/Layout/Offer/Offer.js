@@ -18,7 +18,7 @@ function Offer() {
     <Section container={false} className={classes.Offer}>
       <Flex>
         <Flex.Row className={classes.RowContainer}>
-          <Flex.Column className={classes.ImageContainer}>
+          <Flex.Column className={classes.ImageContainer} data-aos="fade-up">
             <BigImage
               src="/images/offer/video-cover.jpg"
               alt="video"
@@ -33,7 +33,7 @@ function Offer() {
               </div>
             </BigImage>
           </Flex.Column>
-          <Flex.Column className={classes.TextContainer}>
+          <Flex.Column className={classes.TextContainer} data-aos="fade-up">
             <OfferMain />
             <div className={classes.Offers}>
               <OfferInfo

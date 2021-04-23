@@ -3,7 +3,7 @@ import classes from "./Feature.module.scss";
 
 function Feature({ title, description, icon, counter }) {
   return (
-    <div className={classes.Feature}>
+    <div className={classes.Feature} data-aos="fade-up">
       <div className={classes.Top}>
         <div className={classes.Icon}>
           <img src={icon} alt={title} />

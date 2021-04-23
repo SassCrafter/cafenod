@@ -5,7 +5,7 @@ import { Card } from "../../../index";
 
 function TabPanel({ title, image, description, price, linkTo }) {
 	return (
-		<Card className={classes.Panel}>
+		<Card className={classes.Panel} data-aos="fade-up">
 			<Link to={linkTo} className={classes.PanelLink}>
 				<div className={classes.Description}>
 					<div className={classes.Image}>

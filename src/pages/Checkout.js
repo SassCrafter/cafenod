@@ -1,11 +1,13 @@
 import React from "react";
 import { PageHero } from "../components/index";
-import { CheckoutContainer } from "../components/Pages/";
+import { CheckoutContainer, CheckoutForm } from "../components/Pages/";
 function Checkout() {
 	return (
 		<main>
 			<PageHero bg="/images/pages/checkout/hero-bg.jpg" />
-			<CheckoutContainer>Checkout</CheckoutContainer>
+			<CheckoutContainer>
+				<CheckoutForm />
+			</CheckoutContainer>
 		</main>
 	);
 }

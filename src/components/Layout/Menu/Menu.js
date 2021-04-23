@@ -19,7 +19,7 @@ function Menu() {
         right="0"
         bottom="0"
       />
-      <div className="z-index">
+      <div className="z-index" data-aos="fade-up">
         <Text>
           <Text.Title textAlign="center">
             <Text.SmallTitle>

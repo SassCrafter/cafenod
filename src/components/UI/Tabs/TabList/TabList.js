@@ -4,7 +4,7 @@ import Tab from "../Tab/Tab";
 
 function TabList({ items, activeTabId, setActiveTabId, setActiveCategory }) {
   return (
-    <ul className={classes.List}>
+    <ul className={classes.List} data-aos="fade-up">
       {items?.map((item, idx) => (
         <Tab
           key={item.id}
