@@ -9,6 +9,13 @@
   background-size: cover;
   @include flexColumn(flex-start, center);
   color: white;
+
+  @include mq($laptop) {
+    min-height: 50rem;
+  }
+  @include mq($pc) {
+    min-height: 60rem;
+  }
 }
 
 .Content {

@@ -1,9 +1,8 @@
 import React from "react";
 import classes from "./PageHero.module.scss";
-import { Title } from "../../index";
+import { Title, ShapeIcon } from "../../index";
 
 function PageHero({ bg }) {
-  console.log(bg);
   return (
     <section
       className={classes.Container}
@@ -14,6 +13,11 @@ function PageHero({ bg }) {
           <Title>Check Out</Title>
         </div>
       </div>
+      <ShapeIcon
+        className={classes.Icon}
+        icon="/images/misc/icon-coffee.png"
+        position={{ position: "absolute", bottom: "-3rem", left: "4rem" }}
+      />
     </section>
   );
 }
