@@ -4,7 +4,14 @@ import { Section } from "../../../index";
 
 function CheckoutContainer({ children, className }) {
 	return (
-		<Section className={`bg-gray ${classes.Container}`}>{children}</Section>
+		<Section
+			container={false}
+			className={`bg-grayish ${classes.Container}`}
+		>
+			<div className={classes.Bg}>
+				<div className="container">{children}</div>
+			</div>
+		</Section>
 	);
 }
 

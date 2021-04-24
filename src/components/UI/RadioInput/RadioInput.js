@@ -8,7 +8,7 @@ function RadioInput({ name, value, checked, labelText }) {
 				type="radio"
 				name={name}
 				value={value}
-				checked={checked}
+				defaultChecked={checked}
 				className={classes.Radio}
 				id={value}
 			/>

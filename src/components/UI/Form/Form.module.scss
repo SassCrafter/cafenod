@@ -1,0 +1,89 @@
+@import "../../../styles/config.module";
+
+.Container {
+	width: 100%;
+}
+
+.Group {
+	width: 100%;
+	margin-bottom: 5rem;
+	@include flexColumn(flex-start);
+}
+
+.InputGroup {
+	width: 100%;
+	margin-bottom: 2rem;
+	@include flex;
+	flex-wrap: wrap;
+}
+
+.InputContainer {
+	flex: 1 1 100%;
+	@include flex;
+	flex-wrap: wrap;
+
+	@include mq($tablet) {
+		flex: 1 1 48%;
+		max-width: 48%;
+	}
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+
+	&.FullWidth {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+.ThreeInputs {
+	.InputContainer {
+		flex: 1 1 32%;
+		max-width: 32%;
+	}
+}
+
+.Input,
+.TextArea {
+	display: inline-block;
+	width: 100%;
+	height: 5.6rem;
+	padding: 0 2.5rem;
+	border: 1px solid transparent;
+	outline: none;
+	font-size: 1.6rem;
+	background-color: $grayish-color;
+	transition: border-color 200ms linear;
+
+	&::placeholder {
+		font-size: inherit;
+	}
+
+	&:hover {
+		border-color: $primary-color;
+	}
+
+	&:focus {
+		border-color: $primary-color;
+		border-width: 2px;
+	}
+}
+
+.TextArea {
+	height: 20rem;
+	padding: 1rem 2.5rem;
+}
+
+.Label {
+	display: block;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+}
+
+.Title {
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: $dark-color;
+}

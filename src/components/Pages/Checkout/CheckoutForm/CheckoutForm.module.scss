@@ -1,0 +1,17 @@
+@import "../../../../styles/config.module";
+
+.Sumbit {
+	width: 100%;
+	@include flex(row, center, flex-end);
+}
+
+.Price {
+	margin-bottom: 0;
+	margin-right: 2rem;
+	color: $dark-color;
+	font-size: 1.8rem;
+
+	span {
+		color: $primary-color;
+	}
+}
