@@ -6,12 +6,13 @@ import { useHistory } from "react-router-dom";
 import { HOME } from "../../../../constants/routes.js";
 
 function CheckoutForm() {
-	const { totalPrice } = useContext(CartContext);
+	const { totalPrice, reset: resetCart } = useContext(CartContext);
 	const history = useHistory();
 
 	const submitHandler = (e) => {
 		e.preventDefault();
 		history.push(HOME);
+		resetCart();
 	};
 
 	return (
