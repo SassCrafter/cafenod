@@ -37,9 +37,11 @@
 }
 
 .ThreeInputs {
-	.InputContainer {
-		flex: 1 1 32%;
-		max-width: 32%;
+	@include mq($laptop) {
+		.InputContainer {
+			flex: 1 1 32%;
+			max-width: 32%;
+		}
 	}
 }
 
