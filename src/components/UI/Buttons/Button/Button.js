@@ -34,6 +34,7 @@ function Button({
       <button
         className={btnClasses}
         onClick={onClick}
+        {...restProps}
         style={{ maxWidth: maxWidth }}
       >
         {children}

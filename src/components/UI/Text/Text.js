@@ -14,10 +14,15 @@ export default Text;
 Text.Title = function TextTitle({
   children,
   textAlign = "left",
+  color,
   ...restProps
 }) {
   return (
-    <div className={classes.Title} {...restProps} style={{ textAlign }}>
+    <div
+      className={`${classes.Title} ${color === "white" ? "white-color" : ""}`}
+      {...restProps}
+      style={{ textAlign }}
+    >
       {children}
     </div>
   );

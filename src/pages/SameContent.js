@@ -1,23 +1,25 @@
 import React, { useState } from "react";
-import { Header, Cart } from "../components/index";
+import { Header, Cart, Footer } from "../components/index";
 
-function SameContent() {
-	const [isCartVisible, setIsCartVisible] = useState(false);
+function SameContent({ children }) {
+  const [isCartVisible, setIsCartVisible] = useState(false);
 
-	const openCart = () => {
-		setIsCartVisible(true);
-	};
+  const openCart = () => {
+    setIsCartVisible(true);
+  };
 
-	const closeCart = () => {
-		setIsCartVisible(false);
-	};
+  const closeCart = () => {
+    setIsCartVisible(false);
+  };
 
-	return (
-		<>
-			<Header onCartButtonClick={openCart} />
-			<Cart open={isCartVisible} onCloseCart={closeCart} />
-		</>
-	);
+  return (
+    <>
+      <Header onCartButtonClick={openCart} />
+      <Cart open={isCartVisible} onCloseCart={closeCart} />
+      {children}
+      <Footer />
+    </>
+  );
 }
 
 export default SameContent;

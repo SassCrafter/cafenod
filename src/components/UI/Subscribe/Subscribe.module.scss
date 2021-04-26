@@ -1,0 +1,42 @@
+@import "../../../styles/config.module";
+
+.Container {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.Group {
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.InputContainer {
+  margin-bottom: 0;
+}
+
+.SubmitContainer {
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 3px;
+  overflow: hidden;
+
+  @include mq($tablet) {
+    width: auto;
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 5.6rem;
+  }
+}
+
+.Subscribe {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 0;
+}

@@ -6,6 +6,7 @@
 
 .Title {
   margin-bottom: 2rem;
+  color: $text-color-dark;
 
   @include mq($laptop) {
     margin-bottom: 3rem;
@@ -13,7 +14,7 @@
 }
 
 .SmallTitle {
-  color: $text-color-dark;
+  color: inherit;
   text-transform: uppercase;
   font-size: 1.4rem;
   font-family: $primary-font;
@@ -28,7 +29,7 @@
 }
 
 .BigTitle {
-  color: $text-color-dark;
+  color: inherit;
   font-size: 3rem;
   text-transform: uppercase;
   margin-bottom: 0;

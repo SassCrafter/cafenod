@@ -24,16 +24,17 @@ function App() {
     <CartProvider>
       <Router>
         <ScrollToTop>
-          <SameContent />
-          <Route exact path={ROUTES.CONTACT}>
-            <h1>Contact</h1>
-          </Route>
-          <Route exact path={ROUTES.CHECKOUT}>
-            <Checkout />
-          </Route>
-          <Route exact path={ROUTES.HOME}>
-            <Home />
-          </Route>
+          <SameContent>
+            <Route exact path={ROUTES.CONTACT}>
+              <h1>Contact</h1>
+            </Route>
+            <Route exact path={ROUTES.CHECKOUT}>
+              <Checkout />
+            </Route>
+            <Route exact path={ROUTES.HOME}>
+              <Home />
+            </Route>
+          </SameContent>
         </ScrollToTop>
       </Router>
     </CartProvider>

@@ -15,6 +15,8 @@ export { default as Title } from "./UI/Title/Title";
 export { default as ShapeIcon } from "./UI/ShapeIcon/ShapeIcon";
 export { default as RadioInput } from "./UI/RadioInput/RadioInput";
 export { default as Form } from "./UI/Form/Form";
+export { default as Input } from "./UI/Input/Input";
+export { default as Subscribe } from "./UI/Subscribe/Subscribe";
 
 export { default as Flex } from "./Layout/Flex/Flex";
 export { default as Header } from "./Layout/Header/Header";
@@ -25,6 +27,7 @@ export { default as Menu } from "./Layout/Menu/Menu";
 export { default as Offer } from "./Layout/Offer/Offer";
 export { default as Testimonials } from "./Layout/Testimonials/Testimonials";
 export { default as Products } from "./Layout/Products/Products";
+export { default as Footer } from "./Layout/Footer/Footer";
 
 export { default as OpeningHours } from "./OpeningHours/OpeningHours";
 export { default as ContactInfo } from "./ContactInfo/ContactInfo";
