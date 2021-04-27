@@ -10,6 +10,7 @@ function Menu() {
         imgPath="/images/menu/deco/deco_01.png"
         imgAlt="cup of coffee"
         top="55px"
+        className={classes.Coffee}
       />
       <Deco
         imgPath="/images/menu/deco/deco_02.png"
@@ -18,6 +19,7 @@ function Menu() {
         left="auto"
         right="0"
         bottom="0"
+        className={classes.House}
       />
       <div className="z-index" data-aos="fade-up">
         <Text>

@@ -9,9 +9,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/swiper.scss";
 
-function Testimonials() {
+function Testimonials({ bgFull }) {
   return (
-    <Section className={classes.Container}>
+    <Section className={`${classes.Container} ${bgFull ? classes.BgFull : ""}`}>
       <Swiper grabCursor spaceBetween={50} data-aos="fade-up">
         {TestimonialsData?.map((item) => (
           <SwiperSlide key={item.id}>

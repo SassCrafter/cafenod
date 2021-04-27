@@ -1,0 +1,25 @@
+@import "../../../../styles/config.module";
+
+.Item {
+  @include flexCenter;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 3px;
+  background-color: $dark-color;
+  color: $primary-color;
+  cursor: pointer;
+  transition: background-color 200ms linear, color 200ms linear;
+
+  a {
+    color: inherit;
+  }
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}

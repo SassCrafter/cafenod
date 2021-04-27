@@ -1,0 +1,46 @@
+@import "../../../styles/config.module";
+
+.Container {
+  @include flexColumn(center);
+
+  @include mq($tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.Icon {
+  //   position: static;
+  margin-bottom: 3rem;
+
+  @include mq($tablet) {
+    order: 2;
+  }
+}
+
+.Title {
+  text-align: center;
+  color: $dark-color;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+
+  @include mq($tablet) {
+    order: 1;
+    width: 40%;
+    text-align: right;
+  }
+  @include mq($laptop) {
+    font-size: 4rem;
+  }
+}
+
+.Text {
+  font-size: 1.4rem;
+  text-align: center;
+
+  @include mq($tablet) {
+    order: 3;
+    width: 40%;
+    text-align: left;
+  }
+}

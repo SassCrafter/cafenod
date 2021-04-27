@@ -1,6 +1,26 @@
 @import "../../../styles/config.module";
 
 .Container {
+  width: 100%;
+  max-width: 50rem;
+  @include flexColumn(flex-start);
+  flex-wrap: wrap;
+
+  @include mq($laptop) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.Btn {
+  margin-bottom: 2rem;
+  @include mq($laptop) {
+    margin-bottom: 0;
+  }
+}
+
+.Content {
   @include flex(row, center);
 }
 

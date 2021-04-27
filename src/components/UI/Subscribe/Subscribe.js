@@ -14,12 +14,12 @@ const config = [
   },
 ];
 
-function Subscribe() {
+function Subscribe({ ...restProps }) {
   const { formState } = useForm(config);
   const [emailInput] = formState.inputs;
 
   return (
-    <div className={classes.Container}>
+    <div className={classes.Container} {...restProps}>
       <Form>
         <Form.Group className={classes.Group}>
           <Form.InputGroup className={classes.InputContainer}>

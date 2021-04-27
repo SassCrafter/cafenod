@@ -1,0 +1,44 @@
+@import "../../../../styles/config.module";
+
+.Top {
+  margin-bottom: 4rem;
+}
+
+.Image {
+  position: relative;
+}
+
+.Leaf {
+  max-width: 14rem;
+  bottom: 0;
+  right: 0;
+
+  @include mq($tablet) {
+    bottom: 0.5rem;
+    right: -1rem;
+    max-width: 18rem;
+  }
+  @include mq($laptop) {
+    bottom: 1rem;
+    right: -1rem;
+    max-width: 28rem;
+  }
+}
+
+.FloatingText {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $dark-color;
+  @include absolute(5rem);
+
+  @include mq($laptop) {
+    font-size: 3.5rem;
+  }
+
+  strong {
+    display: block;
+    color: white;
+    font-size: 4em;
+    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+}

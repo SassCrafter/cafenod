@@ -1,0 +1,20 @@
+@import "../../../../styles/config.module";
+
+.Content {
+  width: 100%;
+  @include flex(row, flex-start);
+  flex-wrap: wrap;
+}
+
+.Text {
+  font-size: 1.4rem;
+  margin: 2rem 0;
+}
+
+.Hours {
+  font-size: 1.4rem;
+
+  span {
+    color: white !important;
+  }
+}

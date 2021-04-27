@@ -34,17 +34,14 @@ function About() {
           </Flex.Column>
           <Flex.Column data-aos="fade-up">
             <AboutText />
-            <div className={classes.Action}>
-              <Button btnType="link" to={ABOUT} className={classes.Btn}>
-                Learn More
-              </Button>
-              <Chip
-                title="RASALINA DE WILLAMSON"
-                subtitle="FOUNDER & CO"
-                imgPath="/images/about/person.png"
-                imgAlt="Rasalina De Willamson"
-              />
-            </div>
+
+            <Chip
+              title="RASALINA DE WILLAMSON"
+              subtitle="FOUNDER & CO"
+              imgPath="/images/about/person.png"
+              imgAlt="Rasalina De Willamson"
+              btnTo={ABOUT}
+            />
           </Flex.Column>
         </Flex.Row>
       </Flex>

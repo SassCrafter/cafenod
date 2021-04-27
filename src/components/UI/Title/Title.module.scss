@@ -3,4 +3,12 @@
 .Title {
   font-size: 4rem;
   text-transform: uppercase;
+
+  @include mq($laptop) {
+    font-size: 6rem;
+  }
+
+  @include mq($pc) {
+    font-size: 8rem;
+  }
 }

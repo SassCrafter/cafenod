@@ -5,9 +5,9 @@ const classNames = {
   rowReverse: classes.RowRevers,
 };
 
-function Flex({ children, ...restProps }) {
+function Flex({ children, className, ...restProps }) {
   return (
-    <div className={classes.Flex} {...restProps}>
+    <div className={`${classes.Flex} ${className || ""}`} {...restProps}>
       {children}
     </div>
   );

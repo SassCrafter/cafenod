@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "icon": "fab fa-facebook-f"
+  },
+  {
+    "id": 1,
+    "icon": "fab fa-twitter"
+  },
+  {
+    "id": 2,
+    "icon": "fab fa-instagram"
+  },
+  {
+    "id": 3,
+    "icon": "fab fa-youtube"
+  },
+  {
+    "id": 4,
+    "icon": "fab fa-behance"
+  }
+]
