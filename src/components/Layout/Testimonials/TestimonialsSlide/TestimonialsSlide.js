@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./TestimonialsSlide.module.scss";
-import { Flex, Text, BigImage } from "../../../index";
+import { Flex, Text, BigImage, Rating } from "../../../index";
 
 function TestimonialsSlide({
   image,
@@ -12,14 +12,6 @@ function TestimonialsSlide({
   position,
   rating,
 }) {
-  let starRatings = [];
-  for (let i = 1; i < 6; i++) {
-    if (i <= rating) {
-      starRatings.push(<i className="fas fa-star"></i>);
-    } else {
-      starRatings.push(<i className="far fa-star"></i>);
-    }
-  }
   return (
     <Flex>
       <Flex.Row>
@@ -42,13 +34,7 @@ function TestimonialsSlide({
               <h3 className={classes.Name}>{name}</h3>
               <h4 className={classes.Position}>{position}</h4>
             </div>
-            <div className={classes.Rating}>
-              <ul>
-                {starRatings.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
-            </div>
+            <Rating rating={rating} />
           </div>
         </Flex.Column>
       </Flex.Row>

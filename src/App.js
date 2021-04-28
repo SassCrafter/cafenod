@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
-import { SameContent, Home, Checkout, About } from "./pages";
+import { SameContent, Home, Checkout, About, Product } from "./pages";
 import CartProvider from "./store/cart/CartProvider";
 import ScrollToTop from "./hoc/ScrollToTop";
 import AOS from "aos";
@@ -19,6 +19,7 @@ function App() {
       delay: 50,
       offset: 200,
       easing: "ease-in-out",
+      once: true,
     });
   }, []);
 
@@ -35,6 +36,9 @@ function App() {
             </Route>
             <Route exact path={ROUTES.ABOUT}>
               <About />
+            </Route>
+            <Route exact path={ROUTES.PRODUCT}>
+              <Product />
             </Route>
             <Route exact path={ROUTES.HOME}>
               <Home />

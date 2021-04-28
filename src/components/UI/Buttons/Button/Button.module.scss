@@ -30,7 +30,7 @@
     }
   }
 
-  @include mq($tablet) {
+  @include mq($pc) {
     font-size: 1.6rem;
   }
 }

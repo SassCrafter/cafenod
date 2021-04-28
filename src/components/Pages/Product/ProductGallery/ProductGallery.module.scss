@@ -1,0 +1,67 @@
+@import "../../../../styles/config.module";
+
+.Original {
+  background-color: white;
+  height: 35rem;
+  @include flexCenter;
+
+  img {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+.Thumbnail {
+  width: 90% !important;
+  background-color: white;
+  height: 25%;
+  min-height: 8rem;
+  margin: 0 0 1rem auto !important;
+  border: 1px solid transparent !important;
+  padding: 1rem !important;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 200ms linear, border-color 200ms linear;
+
+  img {
+    width: 100% !important;
+    max-width: 4rem;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    border-color: $primary-color !important;
+  }
+  &:global(.active) {
+    opacity: 1;
+  }
+}
+
+.Btn {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  width: 5rem;
+  height: 4rem;
+  background-color: $grayish-color;
+  color: $dark-color;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  z-index: 4;
+  transition: background-color 200ms linear, color 200ms linear;
+
+  &:hover {
+    background-color: $dark-color;
+    color: white;
+  }
+}
+
+.Next {
+  left: auto;
+  right: 1rem;
+}

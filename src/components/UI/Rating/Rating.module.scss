@@ -1,0 +1,14 @@
+@import "../../../styles/config.module";
+
+.Rating {
+	width: 100%;
+	max-width: 4rem;
+	ul {
+		@include flex;
+		color: $yellow-color;
+	}
+
+	li {
+		margin: 0 0.25rem;
+	}
+}

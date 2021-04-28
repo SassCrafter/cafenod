@@ -10,11 +10,13 @@ function Button({
   fullWidth,
   maxWidth = "auto",
   outline,
+  dark,
   className,
   ...restProps
 }) {
   const btnClasses = classNames({
     [classes.Btn]: true,
+    [classes.Dark]: dark,
     [classes.Outline]: outline,
     [className]: className,
     [classes.FullWidth]: fullWidth,

@@ -1,0 +1,43 @@
+@import "../../../styles/config.module";
+
+.InputWrapper {
+	width: auto;
+	padding: 0 2rem;
+	height: 4.5rem;
+	border-radius: 3px;
+	background-color: white;
+	@include flex(row, center, flex-start);
+}
+
+.Label {
+	margin-bottom: 0;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: $dark-color;
+	margin-right: 2rem;
+}
+
+.Btn {
+	width: 2rem;
+	height: 2rem;
+	outline: none;
+	border: none;
+	color: $dark-color;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 2.2rem;
+	font-weight: 600;
+	transition: color 200ms linear;
+
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+.Amount {
+	font-weight: 600;
+	font-size: 2rem;
+	display: inline-block;
+	margin: 0 0.5rem;
+	color: $dark-color;
+}

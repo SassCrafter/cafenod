@@ -1,0 +1,53 @@
+@import "../../../../styles/config.module";
+
+.Title {
+	font-size: 2.5rem;
+	color: $dark-color;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.Rating {
+	margin-bottom: 2rem;
+
+	@include mq($tablet) {
+		i {
+			font-size: 1.4rem;
+		}
+	}
+	@include mq($laptop) {
+		i {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+.Description {
+	margin-bottom: 2rem;
+}
+
+.Price {
+	@include flex(row, center, flex-start);
+	margin-bottom: 2rem;
+
+	h5 {
+		font-size: 2.5rem;
+		color: $dark-color;
+		margin-right: 2rem;
+		margin-bottom: 0;
+	}
+
+	small {
+		font-size: 1.5rem;
+		i {
+			display: inline-block;
+			margin-right: 1rem;
+			color: $primary-color;
+		}
+	}
+}
+
+.AddProduct {
+	max-width: 35rem;
+	@include flex(row, stretch);
+}

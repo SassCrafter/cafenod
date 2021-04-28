@@ -19,6 +19,9 @@ export { default as Input } from "./UI/Input/Input";
 export { default as Subscribe } from "./UI/Subscribe/Subscribe";
 export { default as SM } from "./UI/SM/SM";
 export { default as LineContent } from "./UI/LineContent/LineContent";
+export { default as ImageGallery } from "./UI/ImageGallery/ImageGallery";
+export { default as Rating } from "./UI/Rating/Rating";
+export { default as NumberInput } from "./UI/NumberInput/NumberInput";
 
 export { default as Flex } from "./Layout/Flex/Flex";
 export { default as Header } from "./Layout/Header/Header";
