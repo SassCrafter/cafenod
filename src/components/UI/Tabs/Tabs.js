@@ -1,33 +1,38 @@
 import React, { useState } from "react";
 import classes from "./Tabs.module.scss";
 import TabList from "./TabList/TabList";
-import TabPanel from "./TabPanel/TabPanel";
 import TabPanelList from "./TabPanelList/TabPanelList";
-import MenuItemsData from "../../../fixtures/menuItems.json";
 
-function Tabs({ items }) {
+function Tabs({
+  tabItems,
+  tabListClass,
+  tabTextName,
+  panelItems,
+  renderPanels,
+  showPanelsHandler,
+}) {
   const [activeTabId, setActiveTabId] = useState(0);
-  const [activeCategory, setActiveCategory] = useState("all");
-
-  let filteredItems = [];
-
-  if (activeCategory === "all") {
-    filteredItems = MenuItemsData;
-  } else {
-    filteredItems = MenuItemsData.filter(
-      (item) => item.category === activeCategory
-    );
-  }
+  const [activePanelId, setActivePanelId] = useState(0);
 
   return (
     <div className={classes.Container}>
       <TabList
-        items={items}
+        items={tabItems}
         activeTabId={activeTabId}
         setActiveTabId={setActiveTabId}
-        setActiveCategory={setActiveCategory}
+        setActivePanelId={setActivePanelId}
+        tabTextName={tabTextName}
+        className={tabListClass}
       />
-      <TabPanelList items={filteredItems} />
+      {showPanelsHandler ? (
+        <TabPanelList>
+          {renderPanels(
+            showPanelsHandler(activePanelId, classes.Visible, classes.Hidden)
+          )}
+        </TabPanelList>
+      ) : (
+        <TabPanelList>{renderPanels(activePanelId)}</TabPanelList>
+      )}
     </div>
   );
 }

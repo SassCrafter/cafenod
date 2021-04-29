@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./CartTop.module.scss";
 
-function CartTop({ itemsAmount, onCloseBtnClick }) {
+function CartTop({ itemsAmount, onCloseBtnClick, onReset }) {
   return (
     <div className={classes.Container}>
       <header className={classes.Header}>
@@ -13,9 +13,13 @@ function CartTop({ itemsAmount, onCloseBtnClick }) {
         <h4 className={classes.Title}>Shopping Cart</h4>
         <div></div>
       </header>
-      <h3 className={classes.BigTitle}>
-        Cart Items - <span className={classes.TotalAmount}>{itemsAmount}</span>
-      </h3>
+      <div className={classes.Actions}>
+        <h3 className={classes.BigTitle}>
+          Cart Items -{" "}
+          <span className={classes.TotalAmount}>{itemsAmount}</span>
+        </h3>
+        <button onClick={onReset}>Remove All</button>
+      </div>
     </div>
   );
 }

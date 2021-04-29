@@ -1,0 +1,21 @@
+@import "../../../styles/config.module";
+
+.Visible {
+	display: block;
+	animation: show 600ms ease;
+}
+
+.Hidden {
+	display: none;
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+		transform: translateY(8rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

@@ -9,8 +9,9 @@ const defaultCartState = {
 
 const cartReducer = (state, action) => {
   if (action.type === "ADD_ITEM") {
-    const updatedTotalPrice = state.totalPrice + action.item.price;
-    const updatedTotalAmount = state.totalAmount + 1;
+    const updatedTotalPrice =
+      state.totalPrice + action.item.price * action.item.amount;
+    const updatedTotalAmount = state.totalAmount + action.item.amount;
     const existingCartItemIndex = state.items.findIndex((item) => {
       return item.id === action.item.id;
     });
@@ -71,6 +72,12 @@ function CartProvider({ children }) {
       item,
     });
   };
+  const addMultipleItems = (item) => {
+    dispatchCartAction({
+      type: "ADD_MULTIPLE_ITEMS",
+      item,
+    });
+  };
 
   const removeItem = (id) => {
     dispatchCartAction({
@@ -90,6 +97,7 @@ function CartProvider({ children }) {
     totalPrice: cartState.totalPrice,
     totalAmount: cartState.totalAmount,
     addItem,
+    addMultipleItems,
     removeItem,
     reset,
   };

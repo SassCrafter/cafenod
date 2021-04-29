@@ -7,12 +7,12 @@ function Tab({
   id,
   setActiveTabId,
   category,
-  setActiveCategory,
+  setActivePanelId,
   ...restProps
 }) {
   const clickHandler = () => {
     setActiveTabId(id);
-    setActiveCategory(category);
+    setActivePanelId(id);
   };
   return (
     <li

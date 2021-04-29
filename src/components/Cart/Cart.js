@@ -7,15 +7,24 @@ import CartSummary from "./CartSummary/CartSummary";
 import CartContext from "../../store/cart/cart-context";
 
 function Cart({ open, onCloseCart }) {
-  const { items, totalPrice, totalAmount, addItem, removeItem } = useContext(
-    CartContext
-  );
+  const {
+    items,
+    totalPrice,
+    totalAmount,
+    addItem,
+    removeItem,
+    reset,
+  } = useContext(CartContext);
   return (
     <>
       <Backdrop visible={open} onClick={onCloseCart} className="cursor-close" />
       <div className={`${classes.Container} ${open ? classes.Open : ""}`}>
         <div className={classes.Top}>
-          <CartTop itemsAmount={totalAmount} onCloseBtnClick={onCloseCart} />
+          <CartTop
+            itemsAmount={totalAmount}
+            onCloseBtnClick={onCloseCart}
+            onReset={reset}
+          />
           <CartItemsList
             items={items}
             onAddItem={addItem}

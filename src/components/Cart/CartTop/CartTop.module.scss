@@ -32,9 +32,30 @@
   font-size: 2.2rem;
   text-transform: uppercase;
   color: $dark-color;
+  margin-bottom: 0;
 }
 
 .TotalAmount {
   font-size: 1.1em;
   color: $primary-color;
+}
+
+.Actions {
+  @include flex(row, center);
+  margin-bottom: 2rem;
+
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: $danger-color;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 0.25rem 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

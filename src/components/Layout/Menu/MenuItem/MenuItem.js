@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import classes from "./TabPanel.module.scss";
+import classes from "./MenuItem.module.scss";
 import { Card } from "../../../index";
+import { Link } from "react-router-dom";
 
-function TabPanel({ id, title, image, description, price, linkTo }) {
+function MenuItem({ id, image, title, description, price, linkTo, className }) {
+  console.log(className);
+  //   if (!image || !title || !description || !price) return null;
   const linkToData = {
     pathname: linkTo,
     id,
@@ -12,7 +14,7 @@ function TabPanel({ id, title, image, description, price, linkTo }) {
     price,
   };
   return (
-    <Card className={classes.Panel} data-aos="fade-up">
+    <Card className={`${classes.Panel} ${className || ""}`} data-aos="fade-up">
       <Link to={linkToData} className={classes.PanelLink}>
         <div className={classes.Description}>
           <div className={classes.Image}>
@@ -34,4 +36,4 @@ function TabPanel({ id, title, image, description, price, linkTo }) {
   );
 }
 
-export default TabPanel;
+export default MenuItem;

@@ -3,7 +3,13 @@ import { ImageGallery } from "../../../index";
 import productImages from "../../../../fixtures/productImages.json";
 import classes from "./ProductGallery.module.scss";
 
-function ProductGallery() {
+function ProductGallery({ image }) {
+  const imageIdx = productImages.findIndex((el) => el.image === image);
+  const updatedImages = [...productImages];
+  updatedImages.splice(imageIdx, 1);
+  updatedImages.unshift({ id: Math.random(), image });
+
+  console.log(updatedImages);
   const renderLeftNav = (onClick, disabled) => {
     return (
       <button
@@ -28,7 +34,7 @@ function ProductGallery() {
   };
   return (
     <ImageGallery
-      items={productImages}
+      items={updatedImages}
       showPlayButton={false}
       originalClass={classes.Original}
       thumbnailClass={classes.Thumbnail}

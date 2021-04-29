@@ -3,6 +3,7 @@ import classes from "./Product.module.scss";
 import { Card, BigImage, Button } from "../../../index";
 import { Link } from "react-router-dom";
 import CartContext from "../../../../store/cart/cart-context";
+import { PRODUCT } from "../../../../constants/routes";
 
 function Product({ id, image, alt, name, price }) {
   const { addItem } = useContext(CartContext);
@@ -18,9 +19,17 @@ function Product({ id, image, alt, name, price }) {
     addItem(item);
   };
 
+  const linkTo = {
+    pathname: PRODUCT,
+    id,
+    image,
+    name,
+    price,
+  };
+
   return (
     <Card className={classes.Container} data-aos="fade-up">
-      <Link to="/product">
+      <Link to={linkTo}>
         <div className={classes.Cover}>
           <BigImage className={classes.Image} src={image} alt={alt} />
         </div>

@@ -2,9 +2,16 @@ import React from "react";
 import classes from "./TabList.module.scss";
 import Tab from "../Tab/Tab";
 
-function TabList({ items, activeTabId, setActiveTabId, setActiveCategory }) {
+function TabList({
+  items,
+  tabTextName,
+  activeTabId,
+  setActiveTabId,
+  setActivePanelId,
+  className,
+}) {
   return (
-    <ul className={classes.List} data-aos="fade-up">
+    <ul className={`${classes.List} ${className || ""}`} data-aos="fade-up">
       {items?.map((item, idx) => (
         <Tab
           key={item.id}
@@ -12,9 +19,9 @@ function TabList({ items, activeTabId, setActiveTabId, setActiveCategory }) {
           isActive={activeTabId === idx}
           setActiveTabId={setActiveTabId}
           category={item.category}
-          setActiveCategory={setActiveCategory}
+          setActivePanelId={setActivePanelId}
         >
-          {item.category}
+          {item[tabTextName]}
         </Tab>
       ))}
     </ul>
