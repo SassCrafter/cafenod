@@ -66,31 +66,14 @@ const useForm = (formConfig) => {
             required={item.required}
             checkFormValidity={checkFormValidaty}
             style={item.style}
+            cols={item.cols}
+            rows={item.rows}
           />
         ),
       };
     });
     addFormInputs(inputs);
   }, []);
-
-  // const createInputs = () => {
-  //   const formInputs = [];
-  //   const inputs = formConfig.map((item) => {
-  //     formInputs.push({ id: item.id, hasError: true, touched: false });
-  //     return (
-  //       <Input
-  //         key={item.label}
-  //         id={item.label}
-  //         label={item.label}
-  //         placeholder={item.placeholder}
-  //         error={item.error}
-  //         checkFormValidity={checkFormValidaty}
-  //       />
-  //     );
-  //   });
-  //   addFormInput(formInputs);
-  //   return inputs;
-  // };
 
   return {
     formState,

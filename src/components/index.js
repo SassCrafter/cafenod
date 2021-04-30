@@ -22,6 +22,7 @@ export { default as LineContent } from "./UI/LineContent/LineContent";
 export { default as ImageGallery } from "./UI/ImageGallery/ImageGallery";
 export { default as Rating } from "./UI/Rating/Rating";
 export { default as NumberInput } from "./UI/NumberInput/NumberInput";
+export { default as Products } from "./UI/Products/Products";
 
 export { default as Flex } from "./Layout/Flex/Flex";
 export { default as Header } from "./Layout/Header/Header";
@@ -31,7 +32,7 @@ export { default as About } from "./Layout/About/About";
 export { default as Menu } from "./Layout/Menu/Menu";
 export { default as Offer } from "./Layout/Offer/Offer";
 export { default as Testimonials } from "./Layout/Testimonials/Testimonials";
-export { default as Products } from "./Layout/Products/Products";
+export { default as PopularProducts } from "./Layout/PopularProducts/PopularProducts";
 export { default as Footer } from "./Layout/Footer/Footer";
 
 export { default as Address } from "./Address/Address";

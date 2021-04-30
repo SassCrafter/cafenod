@@ -11,16 +11,16 @@ function ProductInfo({ id, image, name, price }) {
     <Section className="bg-grayish">
       <Flex>
         <Flex.Row>
-          <Flex.Column>
+          <Flex.Column data-aos="fade-up">
             <ProductGallery image={image} />
           </Flex.Column>
-          <Flex.Column>
+          <Flex.Column data-aos="fade-up">
             <ProductDetails image={image} price={price} name={name} id={id} />
           </Flex.Column>
         </Flex.Row>
       </Flex>
-      <ProductDescription />
-      {/*<RelatedProducts />*/}
+      <ProductDescription data-aos="fade-up" />
+      <RelatedProducts />
     </Section>
   );
 }

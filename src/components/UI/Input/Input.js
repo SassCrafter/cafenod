@@ -31,18 +31,21 @@ function Input({
     checkFormValidity(id, hasError);
   };
 
-  return (
-    <div
-      className={`${classes.Container} ${className || ""} ${
-        style ? inputStyleClasses[style] : ""
-      }`}
-    >
-      {label && (
-        <label className={classes.Label} htmlFor={id}>
-          {label}
-          {required && "*"}
-        </label>
-      )}
+  const returnInput =
+    type === "textarea" ? (
+      <textarea
+        id={id}
+        type={type}
+        value={value}
+        onChange={inputChangeHandler}
+        onBlur={blurHandler}
+        required={required}
+        className={`${classes.TextArea} ${className || ""} ${
+          hasError ? classes.Invalid : ""
+        }`}
+        {...restProps}
+      />
+    ) : (
       <input
         id={id}
         type={type}
@@ -55,6 +58,21 @@ function Input({
           hasError ? classes.Invalid : ""
         }`}
       />
+    );
+
+  return (
+    <div
+      className={`${classes.Container} ${className || ""} ${
+        style ? inputStyleClasses[style] : ""
+      }`}
+    >
+      {label && (
+        <label className={classes.Label} htmlFor={id}>
+          {label}
+          {required && "*"}
+        </label>
+      )}
+      {returnInput}
       {hasError && <span className={classes.Error}>{error}</span>}
     </div>
   );

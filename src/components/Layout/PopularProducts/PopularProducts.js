@@ -1,11 +1,10 @@
 import React from "react";
-import classes from "./Products.module.scss";
-import { Section, Text } from "../../index";
-import ProductsList from "./ProductsList/ProductsList";
+import PopularProductsData from "../../../fixtures/popularProductsData.json";
+import { Products, Section, Text } from "../../index";
 
 function PopularProducts() {
   return (
-    <Section className={`bg-gray ${classes.Products}`} data-aos="fade-up">
+    <Section className="bg-gray" data-aos="fade-up">
       <Text>
         <Text.Title>
           <Text.SmallTitle>
@@ -15,7 +14,7 @@ function PopularProducts() {
           <Text.BigTitle>OUR POPULAR PRODUCTS</Text.BigTitle>
         </Text.Title>
       </Text>
-      <ProductsList />
+      <Products items={PopularProductsData} />
     </Section>
   );
 }

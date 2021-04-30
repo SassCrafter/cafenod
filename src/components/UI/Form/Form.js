@@ -43,8 +43,16 @@ Form.InputGroup = function FormInputGroup({
   );
 };
 
-Form.InputContainer = function FormInputContainer({ children }) {
-  return <div className={classes.InputContainer}>{children}</div>;
+Form.InputContainer = function FormInputContainer({ children, fullWidth }) {
+  return (
+    <div
+      className={`${classes.InputContainer} ${
+        fullWidth ? classes.InputFullWidth : ""
+      }`}
+    >
+      {children}
+    </div>
+  );
 };
 
 Form.Input = function FormInput({
@@ -105,11 +113,13 @@ Form.TextArea = function FormTextArea({
   );
 };
 
-Form.Submit = function FormSubmit({ children, className, disabled }) {
+Form.Submit = function FormSubmit({ children, className, disabled, center }) {
   return (
     <Button
       type="submit"
-      className={`${className} ${disabled ? classes.SubmitDisabled : ""}`}
+      className={`${className || ""} ${
+        disabled ? classes.SubmitDisabled : ""
+      } ${center ? classes.Centered : ""}`}
       disabled={disabled}
     >
       {children}

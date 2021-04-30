@@ -39,6 +39,11 @@
   }
 }
 
+.TextArea {
+  height: auto;
+  padding: 2rem 2.5rem;
+}
+
 .Invalid::placeholder {
   color: white;
 }

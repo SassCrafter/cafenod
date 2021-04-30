@@ -45,6 +45,11 @@
   }
 }
 
+.InputFullWidth {
+  width: 100% !important;
+  max-width: 100%;
+}
+
 .Input,
 .TextArea {
   display: inline-block;
@@ -88,4 +93,9 @@
   font-size: 2rem;
   text-transform: uppercase;
   color: $dark-color;
+}
+
+.Centered {
+  display: block;
+  margin: 0 auto;
 }
